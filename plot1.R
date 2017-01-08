@@ -7,4 +7,6 @@ data <- read.csv(text = grep("^[1,2]/2/2007", readLines("household_power_consump
 
 ## 2. Generate plot 1
 
+png('plot1.png')
 hist(data$Global_active_power, col="red", main="Global Active Power", xlab="Global Active Power (kilowatts)")
+dev.off()
